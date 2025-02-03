@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta id="meta-desc" name="description"
+    content="Generalization in Robotics Manipulation Workshop and Challenges">
+  <meta id="meta-author" name="author" content="Shizhe Chen">
+  <title id="title"></title>
+
+  <link href="./assets/css/fonts.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./assets/css/academic.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="icon" href="#">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHTS66Q6JT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-JHTS66Q6JT');
+  </script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body pad-zero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 id="project-name" class="title is-1 publication-title"></h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <h1 id="conference-details"></h1>
+                <h1 id="workshop-date" class="is-4"></h1>
+              </span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- Home. -->
+                <span class="link-block">
+                  <a href="./index.html" class="external-link button is-normal is-rounded is-danger" style="box-shadow: 0px 0px 5px 0px lightgrey">
+                    <span class="icon">
+                      <i class="fas fa-gamepad icon"></i>
+                    </span>
+                    <span>Home</span>
+                  </a>
+                </span>
+              
+                <!-- GemBench. -->
+                <span class="link-block">
+                  <a href="#gembench" class="external-link button is-normal is-rounded is-success">
+                    <span class="icon">
+                      <i class="fas fa-users icon"></i>
+                    </span>
+                    <span>GemBench</span>
+                  </a>
+                </span>
+
+                <!-- Colosseum. -->
+                <span class="link-block">
+                  <a href="#colosseum" class="external-link button is-normal is-rounded is-link">
+                    <span class="icon">
+                      <i class="far fa-calendar-alt icon"></i>
+                    </span>
+                    <span>Colosseum</span>
+                  </a>
+                </span>
+
+                <!-- Evaluation. -->
+                <span class="link-block">
+                  <a href="#evaluation" class="external-link button is-normal is-rounded is-warning">
+                    <span class="icon">
+                      <i class="far fa-calendar-alt icon"></i>
+                    </span>
+                    <span>Evaluation</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gembench" class="section">
+    <div class="container is-max-desktop">
+      <!-- GemBench. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">GemBench Challenge</h2>
+          <div class="content has-text-justified">
+            <p>
+              GemBench comprises 16 training tasks with 31 variations, covering seven action primitives. The testing set includes 44 tasks with 92 variations, which are organized into four progressively more challenging levels to systematically evaluate generalization capabilities, namely novel placements, novel rigid object, novel articulated objects, and long-horizon tasks.
+            </p>
+            <img src="./assets/images/challenges/gembench.png" alt="GemBench" >
+          </div>
+        </div>
+      </div>
+      <!--/ GemBench. -->
+    </div>
+  </section>
+
+  <section id="colosseum" class="section">
+    <div class="container is-max-desktop">
+      <!-- Colosseum. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Colosseum Challenge</h2>
+          <div class="content has-text-justified">
+            <p>
+              Colosseum encompasses 14 perturbation factors within 20 distinct RLBench tasks, categorized into three tiers (simple, intermediate, and complex) according to the number of way-points involved (task horizon). Collectively, THE COLOSSEUM presents 20,371 unique task perturbations instances.
+            </p>
+            <img src="./assets/images/challenges/colosseum.png" alt="Colosseum" >
+          </div>
+        </div>
+      </div>
+      <!--/ Colosseum. -->
+    </div>
+  </section>
+
+  <section id="evaluation" class="section">
+    <div class="container is-max-desktop">
+      <!-- Evaluation. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Evaluation</h2>
+          <div class="content has-text-justified">
+            <p>
+              <strong>Simulator-based Evaluation</strong>: The two challenges are evaluated separately. The evaluation criterion is the average success rate over all tasks. Each challenge includes a public testing split and a private testing split. 
+              The public testing split has already been released with the benchmark. As participants are able to evaluate their models by themselves with the released simulators, we do not rely on the public testing split in the challenge, though reporting results on public testing split is encouraged and can be updated in paper-with-code leaderboards (https://paperswithcode.com/sota/robot-manipulation-generalization-on-gembench, https://paperswithcode.com/sota/robot-manipulation-generalization-on-the). 
+              The private testing split contains new perturbations and tasks that are unseen in the released simulators. The participants should submit their models as virtual environments via docker images to test on the held-out private testing split. Each participating team is allowed a limited number of submissions to prevent potential exposure of the testing split information.
+              <br><br>
+
+              <strong>Real Robot Evaluation</strong>: Participants with top performances from each challenge will have the opportunity to test their models on our real robots. A limited amount of real robot data can be provided to allow participants to finetune their models. Final evaluations will be conducted on the same Franka robot in our labs to minimize sim-to-real gap.
+              <br><br>
+
+              <strong>Prize</strong>: The final challenge ranking is based on the results in the private testing split and the real robot performance. We plan to award prizes to challenge winners provided the availability of sponsors.
+              <br><br>
+
+              <strong>Timeline</strong>: The challenges are set to begin in January 2025, following the workshop's acceptance. The deadline for the simulation phase is April 30, 2025, with the month of May allocated for evaluations on real robots. Final winner notifications will be sent by the end of May.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Evaluation. -->
+    </div>
+  </section>
+
+
+
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script defer src="./assets/js/fontawesome.all.min.js"></script>
+<script src="./assets/js/bulma-carousel.min.js"></script>
+<script src="./assets/js/bulma-slider.min.js"></script>
+<script src="./assets/js/config.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</html>
