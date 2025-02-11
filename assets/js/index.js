@@ -122,8 +122,9 @@ $(document).ready(function () {
 
   // talk content
   talk_content = Object.values(talk_speaker_details)
-  populate_people_html('talk-content1', talk_content.slice(0, 2))
-  populate_people_html('talk-content2', talk_content.slice(2, ))
+  populate_people_html('talk-content1', talk_content)
+  // populate_people_html('talk-content1', talk_content.slice(0, 2))
+  // populate_people_html('talk-content2', talk_content.slice(2, ))
 
   // organizers content
   populate_organizers_html('organizer-content-1', organizers_details.slice(0, 5))
@@ -201,7 +202,7 @@ $(document).ready(function () {
           </svg>
         </a-->
         <br>
-        <p>Last updated on: <span id="last-updated">Mon Feb 3 2025</span> | Page template borrowed from <a target="_blank" href="https://neurl-rmw.github.io/"><span
+        <p>Last updated on: <span id="last-updated">Tue Feb 11 2025</span> | Page template borrowed from <a target="_blank" href="https://neurl-rmw.github.io/"><span
               class="small-caps black-font">NeuRL-RMW</span></a>.</p>
       </div>
     </div>

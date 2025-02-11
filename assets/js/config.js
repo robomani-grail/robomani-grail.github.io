@@ -1,14 +1,13 @@
 const project_name = `Generalization in Robotics Manipulation Workshop and Challenges`
 const proj_small_caps = `<span class="small-caps">GRAIL</span>: `
 const conference_details = ['CVPR 2025', 'https://cvpr.thecvf.com/', 'Location', 'assets/images/cvpr25-logo.png']
-const workshop_date = `June xx, 2025`
+const workshop_date = `June 11, 2025`
 
 const talk_speaker_details = {
-  'jm': ['Jitendra Malik', './assets/images/talks/jitendra_malik.jpg', 'Professor', 'University of California at Berkeley', 'https://people.eecs.berkeley.edu/~malik/', 'title', 'abstract'],
-  'ag': ['Abhinav Gupta', './assets/images/talks/abhinav_gupta.jpg', 'Professor', 'Carnegie Mellon University', 'https://www.cs.cmu.edu/~abhinavg/', 'title', 'abstract'],
-  'cf': ['Chelsea Finn', './assets/images/talks/chelsea_finn.jpg', 'Assistant Professor', ' Stanford University', 'https://ai.stanford.edu/~cbfinn/', 'title', 'abstract'],
-  'sj': ['Stephen James', './assets/images/talks/stephen_james.jpg', '', 'Dyson Robotics', 'https://stepjam.github.io/', 'title', 'abstract'],
-  'yl': ['Yunzhu Li', './assets/images/talks/yunzhu_li.jpg', 'Assistant Professor', 'Columbia University', 'https://yunzhuli.github.io/', 'title', 'abstract'],
+  'jm': ['Jitendra Malik', './assets/images/talks/jitendra_malik.jpg', 'Professor', 'University of California at Berkeley', 'https://people.eecs.berkeley.edu/~malik/', 'title', 'TBD'],
+  'ag': ['Abhinav Gupta', './assets/images/talks/abhinav_gupta.jpg', 'Professor', 'Carnegie Mellon University', 'https://www.cs.cmu.edu/~abhinavg/', 'title', 'TBD'],
+  'yl': ['Yunzhu Li', './assets/images/talks/yunzhu_li.jpg', 'Assistant Professor', 'Columbia University', 'https://yunzhuli.github.io/', 'title', 'TBD'],
+  'rk': ['Ranjay Krishna', './assets/images/talks/ranjay_krishna.jpeg', 'Assistant Professor', 'University of Washington', 'https://ranjaykrishna.com/index.html', 'title', 'TBD'],
 }
 
 const organizers_details = [
@@ -38,12 +37,11 @@ const org_affiliation_logos = [
 const schedule = [
   ['intro', '13:00 - 13:10', 'Introduction and welcome'],
   ['inv-talk', '13:10 - 13:50', 'Invited Talk', 'jm', 'in-person'],
-  ['inv-talk', '13:50 - 14:30', 'Invited Talk', 'ag', 'in-person'],
-  ['inv-talk', '14:30 - 15:10', 'Invited Talk', 'cf', 'online'],
-  ['coffee-break', '15:10 - 15:40', '<span class="bold has-text-info">Spotlight Posters</span> & Coffee Break'],
-  ['inv-talk', '15:40 - 16:20', 'Invited Talk',  'sj', 'online'],
-  ['inv-talk', '16:20 - 17:00', 'Invited Talk', 'yl', 'in-person'],
-  ['spot-ppt', '17:00 - 17:15', 'Challenge overview and results summary'],
-  ['spot-ppt', '17:15 - 17:55', 'Winner and runner-up presentations for GemBench and Colosseum challenges'],
+  ['inv-talk', '13:50 - 14:30', 'Invited Talk', 'yl', 'in-person'],
+  ['coffee-break', '14:30 - 15:30', '<span class="bold has-text-info">Spotlight Posters</span> & Coffee Break'],
+  ['inv-talk', '15:30 - 16:10', 'Invited Talk',  'ag', 'in-person'],
+  ['inv-talk', '16:10 - 16:50', 'Invited Talk', 'rk', 'in-person'],
+  ['spot-ppt', '16:50 - 17:05', 'Challenge overview and results summary'],
+  ['spot-ppt', '17:05 - 17:55', 'Winner and runner-up presentations for GemBench and Colosseum challenges'],
   ['disc', '17:55 - 18:00', 'Award ceremony and closing remark'], 
 ]

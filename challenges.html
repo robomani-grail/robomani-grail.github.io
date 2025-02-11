@@ -49,7 +49,7 @@
                 <span class="link-block">
                   <a href="./index.html" class="external-link button is-normal is-rounded is-danger" style="box-shadow: 0px 0px 5px 0px lightgrey">
                     <span class="icon">
-                      <i class="fas fa-gamepad icon"></i>
+                      <i class="fas fa-home icon"></i>
                     </span>
                     <span>Home</span>
                   </a>
@@ -101,7 +101,7 @@
           <h2 class="title is-3">GemBench Challenge</h2>
           <div class="content has-text-justified">
             <p>
-              GemBench comprises 16 training tasks with 31 variations, covering seven action primitives. The testing set includes 44 tasks with 92 variations, which are organized into four progressively more challenging levels to systematically evaluate generalization capabilities, namely novel placements, novel rigid object, novel articulated objects, and long-horizon tasks.
+              <a href="https://www.di.ens.fr/willow/research/gembench/" target="_blank">GemBench</a> comprises 16 training tasks with 31 variations, covering seven action primitives. The testing set includes 44 tasks with 92 variations, which are organized into four progressively more challenging levels to systematically evaluate generalization capabilities, namely novel placements, novel rigid object, novel articulated objects, and long-horizon tasks.              
             </p>
             <img src="./assets/images/challenges/gembench.png" alt="GemBench" >
           </div>
@@ -119,7 +119,7 @@
           <h2 class="title is-3">Colosseum Challenge</h2>
           <div class="content has-text-justified">
             <p>
-              Colosseum encompasses 14 perturbation factors within 20 distinct RLBench tasks, categorized into three tiers (simple, intermediate, and complex) according to the number of way-points involved (task horizon). Collectively, THE COLOSSEUM presents 20,371 unique task perturbations instances.
+              <a href="https://robot-colosseum.github.io/" target="_blank">Colosseum</a> aims to evaluate models' generalization across various scene perturbations. It encompasses 14 perturbation factors within 20 distinct RLBench tasks, categorized into three tiers (simple, intermediate, and complex) according to the number of way-points involved (task horizon). Collectively, Colosseum presents 20,371 unique task perturbations instances.
             </p>
             <img src="./assets/images/challenges/colosseum.png" alt="Colosseum" >
           </div>
@@ -136,21 +136,33 @@
         <div class="column">
           <h2 class="title is-3">Evaluation</h2>
           <div class="content has-text-justified">
-            <p>
-              <strong>Simulator-based Evaluation</strong>: The two challenges are evaluated separately. The evaluation criterion is the average success rate over all tasks. Each challenge includes a public testing split and a private testing split. 
-              The public testing split has already been released with the benchmark. As participants are able to evaluate their models by themselves with the released simulators, we do not rely on the public testing split in the challenge, though reporting results on public testing split is encouraged and can be updated in paper-with-code leaderboards (https://paperswithcode.com/sota/robot-manipulation-generalization-on-gembench, https://paperswithcode.com/sota/robot-manipulation-generalization-on-the). 
-              The private testing split contains new perturbations and tasks that are unseen in the released simulators. The participants should submit their models as virtual environments via docker images to test on the held-out private testing split. Each participating team is allowed a limited number of submissions to prevent potential exposure of the testing split information.
-              <br><br>
+              <h4>Simulator-based Evaluation</h4>
+              To participate the challenge, please first register your team using <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEZI22Hrc-wtgmdsKya08xa7W_atL-xq_vOHb9qo6f-jWXAA/viewform?usp=dialog" target="_blank">this registration form</a>.
 
-              <strong>Real Robot Evaluation</strong>: Participants with top performances from each challenge will have the opportunity to test their models on our real robots. A limited amount of real robot data can be provided to allow participants to finetune their models. Final evaluations will be conducted on the same Franka robot in our labs to minimize sim-to-real gap.
-              <br><br>
+              Note that the two challenges are evaluated independently. Please review the guidelines for your chosen challenge(s):
+              <ul>
+                <li>
+                    GemBench Challenge Guidelines:
+                    <a href="https://github.com/vlc-robot/robot-3dlotus/blob/main/challenges/CHALLENGE_CVPR25.md" target="_blank">View Guidelines</a>
+                </li>
+                <li>
+                    Colosseum Challenge Guidelines:
+                    <a href="https://docs.google.com/document/d/11mYN_Ml6l-J2H3lK2NU0XvurgLtjQ8gdnA-80ei_CwY/edit?usp=sharing" target="_blank">View Guidelines</a>
+                </li>
+            </ul>
+              
+              <!-- <strong>Real Robot Evaluation</strong>: Participants with top performances from each challenge will have the opportunity to test their models on our real robots. A limited amount of real robot data can be provided to allow participants to finetune their models. Final evaluations will be conducted on the same Franka robot in our labs to minimize sim-to-real gap.
+              <br><br> -->
 
-              <strong>Prize</strong>: The final challenge ranking is based on the results in the private testing split and the real robot performance. We plan to award prizes to challenge winners provided the availability of sponsors.
-              <br><br>
+              <!-- <strong>Prize</strong>: The final challenge ranking is based on the results in the private testing split and the real robot performance. We plan to award prizes to challenge winners provided the availability of sponsors.
+              <br><br> -->
 
-              <strong>Timeline</strong>: The challenges are set to begin in January 2025, following the workshop's acceptance. The deadline for the simulation phase is April 30, 2025, with the month of May allocated for evaluations on real robots. Final winner notifications will be sent by the end of May.
-
-            </p>
+              <h4>Dates</h4>
+              <ul>
+                <li>Challenge submission deadline: May 12 23:59 CET</li>
+                <li>Challenge report deadline: May 19 23:59 CET</li>
+              </ul>
+            
           </div>
         </div>
       </div>
