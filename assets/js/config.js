@@ -35,13 +35,13 @@ const org_affiliation_logos = [
 // event-alias, time slot, event name, person alias from talk_speaker_details, ppt mode
 // last two are for inv-talk event-alias entries
 const schedule = [
-  ['intro', '13:00 - 13:10', 'Introduction and welcome'],
-  ['inv-talk', '13:10 - 13:50', 'Invited Talk', 'jm', 'in-person'],
-  ['inv-talk', '13:50 - 14:30', 'Invited Talk', 'yl', 'in-person'],
-  ['coffee-break', '14:30 - 15:30', '<span class="bold has-text-info">Spotlight Posters</span> & Coffee Break'],
-  ['inv-talk', '15:30 - 16:10', 'Invited Talk',  'ag', 'in-person'],
-  ['inv-talk', '16:10 - 16:50', 'Invited Talk', 'rk', 'in-person'],
-  ['spot-ppt', '16:50 - 17:05', 'Challenge overview and results summary'],
-  ['spot-ppt', '17:05 - 17:55', 'Winner and runner-up presentations for GemBench and Colosseum challenges'],
-  ['disc', '17:55 - 18:00', 'Award ceremony and closing remark'], 
+  ['intro', '09:00 -09:05', 'Introduction and welcome'],
+  ['inv-talk', '09:05 - 09:40', 'Invited Talk', 'jm', 'in-person'],
+  ['inv-talk', '09:40 - 10:15', 'Invited Talk', 'rk', 'in-person'],
+  ['coffee-break', '10:15 - 10:45', '<span class="bold has-text-info">Coffee Break</span>'],
+  ['inv-talk', '10:45 - 11:20', 'Invited Talk',  'ag', 'in-person'],
+  ['inv-talk', '11:20 - 11:55', 'Invited Talk', 'yl', 'in-person'],
+  ['spot-ppt', '11:55 - 12:05', 'Challenge overview and results summary'],
+  ['spot-ppt', '12:05 - 12:55', 'Winner and runner-up presentations for GemBench and Colosseum challenges'],
+  ['disc', '12:55 - 13:00', 'Award ceremony and closing remark'], 
 ]
