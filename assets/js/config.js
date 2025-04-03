@@ -37,10 +37,10 @@ const org_affiliation_logos = [
 const schedule = [
   ['intro', '09:00 -09:05', 'Introduction and welcome'],
   ['inv-talk', '09:05 - 09:40', 'Invited Talk', 'jm', 'in-person'],
-  ['inv-talk', '09:40 - 10:15', 'Invited Talk', 'rk', 'in-person'],
+  ['inv-talk', '09:40 - 10:15', 'Invited Talk', 'yl', 'in-person'],
   ['coffee-break', '10:15 - 10:45', '<span class="bold has-text-info">Coffee Break</span>'],
   ['inv-talk', '10:45 - 11:20', 'Invited Talk',  'ag', 'in-person'],
-  ['inv-talk', '11:20 - 11:55', 'Invited Talk', 'yl', 'in-person'],
+  ['inv-talk', '11:20 - 11:55', 'Invited Talk', 'rk', 'in-person'],
   ['spot-ppt', '11:55 - 12:05', 'Challenge overview and results summary'],
   ['spot-ppt', '12:05 - 12:55', 'Winner and runner-up presentations for GemBench and Colosseum challenges'],
   ['disc', '12:55 - 13:00', 'Award ceremony and closing remark'], 
