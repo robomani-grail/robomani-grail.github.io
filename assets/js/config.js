@@ -8,6 +8,7 @@ const talk_speaker_details = {
   'ag': ['Abhinav Gupta', './assets/images/talks/abhinav_gupta.jpg', 'Professor', 'Carnegie Mellon University', 'https://www.cs.cmu.edu/~abhinavg/', 'title', 'TBD'],
   'yl': ['Yunzhu Li', './assets/images/talks/yunzhu_li.jpg', 'Assistant Professor', 'Columbia University', 'https://yunzhuli.github.io/', 'title', 'TBD'],
   'rk': ['Ranjay Krishna', './assets/images/talks/ranjay_krishna.jpeg', 'Assistant Professor', 'University of Washington', 'https://ranjaykrishna.com/index.html', 'title', 'TBD'],
+  'cf': ['Chelsea Finn', './assets/images/talks/chelsea_finn.jpg', 'Assistant Professor', 'Stanford University', 'https://ai.stanford.edu/~cbfinn/', 'title', 'TBD'],
 }
 
 const organizers_details = [
@@ -41,7 +42,8 @@ const schedule = [
   ['coffee-break', '10:15 - 10:45', '<span class="bold has-text-info">Coffee Break</span>'],
   ['inv-talk', '10:45 - 11:20', 'Invited Talk',  'ag', 'in-person'],
   ['inv-talk', '11:20 - 11:55', 'Invited Talk', 'rk', 'in-person'],
-  ['spot-ppt', '11:55 - 12:05', 'Challenge overview and results summary'],
-  ['spot-ppt', '12:05 - 12:55', 'Winner and runner-up presentations for GemBench and Colosseum challenges'],
+  ['inv-talk', '11:55 - 12:30', 'Invited Talk', 'cf', 'in-person'],
+  ['spot-ppt', '12:30 - 12:40', 'Challenge overview and results summary'],
+  ['spot-ppt', '12:40 - 12:55', 'Winner presentations for GemBench and Colosseum challenges'],
   ['disc', '12:55 - 13:00', 'Award ceremony and closing remark'], 
 ]
