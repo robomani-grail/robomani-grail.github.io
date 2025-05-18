@@ -17,6 +17,8 @@ const organizers_details = [
   ['Jiafei Duan', 'assets/images/organizers/jiafei_duan.png', 'PhD Student', 'University of Washington', 'https://duanjiafei.com/'],
   ['Ishika Singh', 'assets/images/organizers/ishika_singh.jpg', 'PhD Student', 'University of Southern California', 'https://ishikasingh.github.io/'],  
   ['Wilbert Pumacay', 'assets/images/organizers/wilbert_pumacay.png', 'MSc Student', 'Universidad Catolica San Pablo', 'https://wpumacay.github.io'],
+  ['Harsh Singh', 'assets/images/organizers/harsh_singh.jpeg', 'MSc Student', 'MBZUAI', 'https://www.linkedin.com/in/harshln/'],
+  ['Mingfei Han', 'assets/images/organizers/mingfei_han.jpeg', 'Postdoc', 'MBZUAI', 'https://mingfei.info/'],
   ['Dieter Fox', 'assets/images/organizers/dieter_fox.jpg', 'Professor', 'University of Washington', 'https://homes.cs.washington.edu/~fox/'],
   ['Cordelia Schmid', 'assets/images/organizers/cordelia_schmid.jpg', 'Research Director', 'Inria Paris', 'https://cordeliaschmid.github.io/'],
   ['Ivan Laptev', 'assets/images/organizers/ivan_laptev.jpg', 'Professor', 'MBZUAI', 'https://mbzuai.ac.ae/study/faculty/ivan-laptev/'],
