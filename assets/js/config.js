@@ -4,11 +4,11 @@ const conference_details = ['CVPR 2025', 'https://cvpr.thecvf.com/', 'Location',
 const workshop_date = `June 11, 2025`
 
 const talk_speaker_details = {
-  'jm': ['Jitendra Malik', './assets/images/talks/jitendra_malik.jpg', 'Professor', 'University of California at Berkeley', 'https://people.eecs.berkeley.edu/~malik/', 'Learning Dexterous Manipulation', ''],
+  'jm': ['Jitendra Malik', './assets/images/talks/jitendra_malik.jpg', 'Professor', 'University of California at Berkeley', 'https://people.eecs.berkeley.edu/~malik/', 'Learning Dexterous Manipulation', ' '],
   'ag': ['Abhinav Gupta', './assets/images/talks/abhinav_gupta.jpg', 'Professor', 'Carnegie Mellon University', 'https://www.cs.cmu.edu/~abhinavg/', 'title', 'TBD'],
   'yl': ['Yunzhu Li', './assets/images/talks/yunzhu_li.jpg', 'Assistant Professor', 'Columbia University', 'https://yunzhuli.github.io/', 'title', 'TBD'],
   'rk': ['Ranjay Krishna', './assets/images/talks/ranjay_krishna.jpeg', 'Assistant Professor', 'University of Washington', 'https://ranjaykrishna.com/index.html', 'title', 'TBD'],
-  'cf': ['Chelsea Finn', './assets/images/talks/chelsea_finn.jpg', 'Assistant Professor', 'Stanford University', 'https://ai.stanford.edu/~cbfinn/', 'Developing Generalist Robot Foundation Models', ''],
+  'cf': ['Chelsea Finn', './assets/images/talks/chelsea_finn.jpg', 'Assistant Professor', 'Stanford University', 'https://ai.stanford.edu/~cbfinn/', 'How to Develop Generalizable and Reliable Robot Policies', ' '],
 }
 
 const organizers_details = [
@@ -43,7 +43,7 @@ const schedule = [
   ['inv-talk', '09:35 - 10:05', 'Invited Talk', 'yl', 'in-person'],
   ['inv-talk', '10:05 - 10:35', 'Invited Talk',  'ag', 'in-person'],
   ['coffee-break', '10:35 - 11:00', '<span class="bold has-text-info">Coffee Break</span>'],
-  ['inv-talk', '11:00 - 11:30', 'Invited Talk', 'rk', 'in-person'],
-  ['inv-talk', '11:30 - 12:00', 'Invited Talk', 'cf', 'virtual'],
+  ['inv-talk', '11:00 - 11:30', 'Invited Talk', 'cf', 'virtual'],
+  ['inv-talk', '11:30 - 12:00', 'Invited Talk', 'rk', 'in-person'],
   ['spot-ppt', '12:00 - 12:30', 'Challenge summary, winner presentations, and award ceremony'],
 ]
