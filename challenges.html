@@ -18,6 +18,182 @@
   <link rel="stylesheet" href="./assets/css/academic.min.css">
   <link rel="stylesheet" href="./assets/css/index.css">
   <link rel="icon" href="#">
+
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        } */
+
+        .leaderboards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .leaderboard {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .leaderboard h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.8rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 10px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        tr:hover {
+            background-color: #f8f9ff;
+            transform: scale(1.01);
+            transition: all 0.2s ease;
+        }
+
+        .rank {
+            text-align: center;
+            font-weight: bold;
+            color: #667eea;
+            font-size: 1.1rem;
+        }
+
+        .team-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .people-names {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .association {
+            font-size: 0.85rem;
+            color: #888;
+            font-style: italic;
+        }
+
+        .report-title {
+            font-size: 0.9rem;
+            color: #444;
+            max-width: 200px;
+        }
+
+        .pdf-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            border: 1px solid #667eea;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .pdf-link:hover {
+            background-color: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .performance {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .performance.high {
+            color: #4CAF50;
+        }
+
+        .performance.medium {
+            color: #FF9800;
+        }
+
+        .performance.low {
+            color: #f44336;
+        }
+
+        @media (max-width: 1200px) {
+            .leaderboards {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            /* body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            } */
+            
+            .leaderboard {
+                padding: 15px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+            
+            th, td {
+                padding: 8px 5px;
+            }
+        }
+  </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHTS66Q6JT"></script>
   <script>
@@ -203,9 +379,67 @@
       </div>
       <!--/ Evaluation. -->
     </div>
+
+    <br><br>
+    <div class="leaderboards">
+      <!-- First Leaderboard -->
+      <div class="leaderboard">
+          <h2>GemBench Leaderboard</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>Team</th>
+                      <th>Members</th>
+                      <th>Association</th>
+                      <th>Report</th>
+                      <th>Performance on Public Split</th>
+                      <th>Performance on Private Split</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td class="rank">1</td>
+                      <td class="team-name">AIM3</td>
+                      <td class="people-names">Ziyang Li, Yuting Mei, Sipeng Zheng, Qin Jin</td>
+                      <td class="association">Renmin University of China, BeingBeyond</td>
+                      <td><a href="submissions/RUC-AIM3-GRAIL2025_GemBenchChallenge.pdf" target="_blank">GRASP to GemBench Challenge</a></td>
+                      <td class="performance high">46.4%</td>
+                      <td class="performance high">46.3%</td>
+                  </tr>
+                  <tr>
+                      <td class="rank">2</td>
+                      <td class="team-name">MiRA</td>
+                      <td class="people-names">Poshenc Chen, Sin-Yi Chiu, Chuan-Yu Wu, Jia-Fong Yeh, Hung-Ting Su, Chih-Han Chen, Yan-Xiang Qiu</td>
+                      <td class="association">National Taiwan University</td>
+                      <td><a href="submissions/7_Hyperparameter_Tuned_Object_.pdf" target="_blank">Hyperparameter-Tuned Object Grounding and Early-Stopped Motion Control Enhance 3D-LOTUS++ on GemBench</a></td>
+                      <td class="performance high">40.3%</td>
+                      <td class="performance high">43.5%</td>
+                  </tr>
+                  <tr>
+                      <td class="rank">3</td>
+                      <td class="team-name">BridgeVLA</td>
+                      <td class="people-names">Peiyan Li, Yixiang Chen, Hongtao Wu, Xiao Ma, Xiangnan Wu, Yan Huang, Liang Wang, Tao Kong, Tieniu Tan</td>
+                      <td class="association">CASIA, ByteDance Seed, UCAS, FiveAges, NJU</td>
+                      <td><a href="submissions/BridgeVLA_workshop_6_9.pdf" target="_blank">Input-Output Alignment for Efficient 3D Manipulation Learning with Vision-Language Models</a></td>
+                      <td class="performance high">36.3%</td>
+                      <td class="performance high">24.3%</td>
+                  </tr>
+                  <tr>
+                      <td class="rank">-</td>
+                      <td class="team-name">RIL-LAB</td>
+                      <td class="people-names">Qiang Nie, Zhiyuan Zhang,  Xianzu Wu, Xin Li, Junyu Shi, Yong Sun, Tianao Shen</td>
+                      <td class="association">HKUST(GZ)</td>
+                      <td><a href="submissions/5_Report_for_RIL_LAB.pdf" target="_blank">Model Evaluation and Fine-Tuning Using Data Augmentation</a></td>
+                      <td class="performance high">29.9%</td>
+                      <td class="performance high">-</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+    </div>
+
   </section>
-
-
 
 </body>
 <script src="./assets/js/jquery.min.js"></script>
