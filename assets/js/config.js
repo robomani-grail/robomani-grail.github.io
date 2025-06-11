@@ -1,6 +1,6 @@
 const project_name = `Generalization in Robotics Manipulation Workshop and Challenges`
 const proj_small_caps = `<span class="small-caps">GRAIL</span>: `
-const conference_details = ['CVPR 2025', 'https://cvpr.thecvf.com/', 'Location', 'assets/images/cvpr25-logo.png']
+const conference_details = ['CVPR 2025', 'https://cvpr.thecvf.com/', 'Room 110B, Music City Center, Nashville TN', 'assets/images/cvpr25-logo.png']
 const workshop_date = `June 11, 2025`
 
 const talk_speaker_details = {
